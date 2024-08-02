@@ -19,11 +19,7 @@ public class Main {
                             juego.Reset_juego();
                             juego.Gen_Mano();
                             juego.Gen_Mano();
-                            System.out.println("Sus cartas son: ");
-                            System.out.println(jugador.getCartas());
-                            System.out.println("Las cartas de la casa son: ");
-                            System.out.println(casa.getCartas());
-                            System.out.println("Que desea hacer? \n1. Deal \n2. Call");
+                            System.out.println("Sus cartas son: \n" + jugador.getCartas() + "\nLas cartas de la casa son: \n" + casa.getCartas() + "\nQue desea hacer? \n1. Deal \n2. Call");
                             int opc = sc.nextInt();
                             while (opc != 2) {
                                 if (22 > jugador.getMano()) {
@@ -55,10 +51,9 @@ public class Main {
                             System.out.println("Que desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");
                             x = sc.nextInt();
                         } else if (x == 2) {
-                            System.out.println("Usted tiene " + jugador.getBJ_W() + " Victoria/s de " + jugador.getJuegos() + " Juegos");
-                            System.out.println("Que desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");
+                            System.out.println("Usted tiene " + jugador.getBJ_W() + " Victoria/s de " + jugador.getJuegos() + " Juegos\n" + "Que desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");
                             x = sc.nextInt();
-                        }else{System.out.println("Ingrese un valor valido"); System.out.println("Que desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");x = sc.nextInt();}
+                        }else{System.out.println("Ingrese un valor valido \nQue desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");x = sc.nextInt();}
                     }
                 case 2:
                     return;
