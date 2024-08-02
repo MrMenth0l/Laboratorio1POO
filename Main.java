@@ -54,8 +54,8 @@ public class Main {
                         x = sc.nextInt();
                     }else{System.out.println("Ingrese un valor valido \nQue desea hacer? \n1. Nuevo Juego\n2. Revisar victorias \n3. Salir");x = sc.nextInt();}
                 }
-            case 2:
-                return;
+            default:
+                System.out.println("Gracias por usar el programa");
         }
 
 
